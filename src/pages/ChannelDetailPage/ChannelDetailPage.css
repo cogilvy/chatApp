@@ -1,0 +1,58 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+.main-container{
+    color: lightgrey;
+    background-color: rgb(39, 39, 39);
+    grid-template-columns: 1fr 2fr 1fr;
+    display: grid; 
+}
+
+.elements{
+    grid-column: 2;
+}
+
+.chat-input{
+    width: 45vw;
+}
+
+.message-box{
+    text-align: left;
+}
+.messages-container{
+
+    border: 1px solid;
+    border-color: var(--text-light);
+    max-height: 66vh;
+    max-width:  50vw; 
+    overflow-y:scroll;
+    overflow-wrap: anywhere;
+    resize: none;
+}
+
+.message-box > .message-name{
+    font-weight: bold;
+}
+
+.form-container{
+    align-content: center;
+    max-width: 50vw;
+}
+
+.message-content{
+    padding-left: 2vw;
+    max-width: 45vw; 
+}
+
+.chat-input, .send-button{
+    resize:none;
+}
+.send-button{
+    width: 5vw;
+}
+
